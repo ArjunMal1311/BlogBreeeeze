@@ -5,6 +5,9 @@ import { TProvider } from "@/providers/toast-provider";
 import getCurrentUser from "./actions/getCurrentUser";
 
 const inter = Inter({ subsets: ["latin"] });
+export const metadata = {
+  title: '| BlogBreeeeze |',
+}
 
 export default async function RootLayout({ children }) {
   const currentUser = await getCurrentUser();

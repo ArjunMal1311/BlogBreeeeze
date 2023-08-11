@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SingleBlog from "../SingleBlog";
 
 export default function SearchPage() {
@@ -11,18 +11,9 @@ export default function SearchPage() {
     setSearchQuery(event.target.value);
   }
 
-  useEffect(() => {
-    axios
-      .get(`/api/search?tags=${searchQuery}`)
-      .then((response) => {
-        console.log(response.data);
-        setBlog(response.data);
-        console.log("Blog:", blog);
-      })
-      .catch((error) => {
-        console.error("Error fetching blogs:", error);
-      });
-  }, [searchQuery]);
+  const handleClick = async () => {
+    
+  };
 
   return (
     <div className="flex justify-center mt-4 flex-col items-center">
@@ -38,12 +29,12 @@ export default function SearchPage() {
             placeholder="Search..."
             className="py-2 px-4 focus:outline-none w-full"
           />
-          {/* <button
+          <button
             className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2"
             onClick={handleClick}
           >
             Search
-          </button> */}
+          </button>
         </div>
       </div>
 

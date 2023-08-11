@@ -4,13 +4,9 @@ import Link from "next/link";
 import getCurrentUser from "./actions/getCurrentUser";
 import getBlogs from "./actions/getBlogs";
 
-export const metadata = {
-  title: "BlogBreeeeze",
-};
-
-export default async function page({ searchParams }) {
+export default async function page() {
   const currentUser = await getCurrentUser();
-  const blogs = await getBlogs(searchParams);
+  const blogs = await getBlogs();
 
   return (
     <div className="m-4 rounded-lg p-2">
