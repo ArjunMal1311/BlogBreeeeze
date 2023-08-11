@@ -7,10 +7,9 @@ BlogBreeeeze is a modern blog website that empowers users to share their insight
 
 **Key Features:**
 
-- Infinite Scroll for fluid content browsing.
 - User authentication and registration (Login/SignUp) for secure access.
 - Profile management (Profile View) to personalize your experience.
-- Robust search functionality for discovering relevant content.
+- Search functionality for discovering relevant content.
 - Easy blog creation and publication.
 - Ability to edit and delete your own blogs.
 - Explore and read blogs shared by the community.
