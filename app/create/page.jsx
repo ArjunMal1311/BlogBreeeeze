@@ -5,10 +5,6 @@ import ImageUpload from "../ImageUpload";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-export const metadata = {
-  title: "Create | BlogBreeeeze",
-};
-
 const Page = () => {
   const initialState = {
     name: "",

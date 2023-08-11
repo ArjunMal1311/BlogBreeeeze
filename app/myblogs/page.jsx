@@ -4,10 +4,6 @@ import getCurrentUser from "../actions/getCurrentUser";
 import getBlogs from "../actions/getBlogs";
 import Link from "next/link";
 
-export const metadata = {
-  title: "My Blogs | BlogBreeeeze",
-};
-
 export default async function page() {
   const currentUser = await getCurrentUser();
   const blogs = await getBlogs(currentUser);

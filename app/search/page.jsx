@@ -3,10 +3,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SingleBlog from "../SingleBlog";
 
-export const metadata = {
-  title: "Search | BlogBreeeeze",
-};
-
 export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [blog, setBlog] = useState([]);

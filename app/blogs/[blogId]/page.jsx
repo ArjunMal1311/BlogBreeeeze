@@ -3,10 +3,6 @@ import getBlogUser from "@/app/actions/getBlogUser";
 import getBlogsById from "@/app/actions/getBlogsById";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 
-export const metadata = {
-  title: "Blog | BlogBreeeeze",
-};
-
 export default async function page({ params }) {
   const blog = await getBlogsById(params);
   const user = await getCurrentUser();

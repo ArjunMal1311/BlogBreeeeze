@@ -4,11 +4,6 @@ import { useRouter } from "next/navigation";
 import axios from "axios";
 import { signIn } from "next-auth/react";
 import { toast } from "react-hot-toast";
-import loading from "../loading";
-
-export const metadata = {
-  title: "Credentials | BlogBreeeeze",
-};
 
 const RegisterForm = () => {
   const router = useRouter();

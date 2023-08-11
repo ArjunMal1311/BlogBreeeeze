@@ -2,10 +2,6 @@ import React from "react";
 import getCurrentUser from "../actions/getCurrentUser";
 import Link from "next/link";
 
-export const metadata = {
-  title: "My Profile | BlogBreeeeze",
-};
-
 const page = async () => {
   const user = await getCurrentUser();
   return (
