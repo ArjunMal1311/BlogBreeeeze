@@ -16,7 +16,7 @@ export default function SearchPage() {
   };
 
   return (
-    <div className="flex justify-center mt-4 flex-col items-center">
+    <div className="flex justify-center mt-4 flex-col items-center m-3">
       <div className="rounded-lg shadow-lg p-6 w-full md:w-2/3 lg:w-1/2 border-4">
         <h2 className="orange_gradient font-extrabold text-2xl mb-4">
           Find What You're Looking For

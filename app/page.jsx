@@ -26,7 +26,7 @@ export default async function page() {
           <p className="text-lg mb-6">
             Ready to share your insights? Start a new blog now!
           </p>
-          <div>
+          <div className="flex flex-col sm:flex-row justify-center">
             <Link
               className="bg-blue-700 text-white rounded-lg px-6 py-3 hover:bg-blue-400 transition-colors font-semibold m-2"
               href="/create"

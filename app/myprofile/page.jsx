@@ -7,8 +7,8 @@ const page = async () => {
   return (
     <div>
       {user ? (
-        <div className="p-8 rounded-lg flex flex-col w-full items-center">
-          <div className="border-2 w-1/2 flex flex-col justify-center items-center p-4">
+        <div className="rounded-lg flex flex-col w-full items-center m-2">
+          <div className="border-2 w-full flex flex-col justify-center items-center p-2">
             <img
               src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
               alt="Profile"
